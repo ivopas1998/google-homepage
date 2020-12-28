@@ -3,28 +3,48 @@
     <head>
         <!--links to the stylesheet-->
         <link rel="stylesheet" href="stylesheet.css">
+        <!--makes the webpage responsive-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--title of the webpage-->
         <title>Google</title>
     </head>
     <body>
+        <!--navigationbar on the webpage-->
         <nav>
-            <div></div>
+            <!--adds an unordered list-->
+            <ul class="navbar">
+                <!--all list items-->
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">Images</a></li>
+                <!--adds an image as a list item-->
+                <li><a href="#"><img class="google-apps-logo" src="images/google-apps-logo.png" alt="Google apps"></a> </li>
+                <!--adds a button as a list item-->
+                <li><button class="sign-in-button"><a href="https://github.com/login">Sign in</a></button></li>    
+            </ul>
         </nav>
+        <!--div for the Google logo-->
+        <div class="HP-image">
+            <!--adds the Google logo by providing a source of the logo-->
+            <img alt="Google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        </div>
+        <!--main purpose of the webpage-->
         <main>
-            <!--div for the Google logo-->
-            <div class="HP-image">
-                <!--adds the Google logo by providing a source of the logo-->
-                <img alt="Google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-            </div>
-            <!--div for the searchbar-->
+            <!--div for the border around input field-->
             <div class="searchbar">
                 <!--adds the searchbar with a placeholder text-->
-                <input type="text" placeholder="Start searching what you want right here!">
-            </div>
+                <input class="input" type="text" placeholder="Start typing right here!">
+            </div> 
+                <!--adds div for buttons-->
+                <div class="result-buttons">
+                    <!--adds buttons-->
+                    <button class="search-button"><a href="#">Google search</a></button>
+                    <button class="lucky-button"><a href="#">I'm feeling lucky!</a></button>
+                </div>
         </main>
+        <!--footer on the webpage-->
         <footer>
-
+            <!--div that contains everything that belongs to the footer-->
+            <div></div>
         </footer>
     </body>
 </html>
