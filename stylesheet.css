@@ -6,7 +6,7 @@ body{
 .HP-image{
     display: flex;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 100px;
     margin-bottom: 30px;
 }
 
@@ -78,12 +78,12 @@ a{
     text-decoration: none;
 }
 
-a:visited{
-    color: darkslategrey;
-}
-
+a, a:visited, a:hover, a:active {
+    color: inherit;
+  }
 
 .sign-in-button{
+    color: white;
     font-size: 15px;
     border: none;
     border-radius: 2px;
@@ -110,8 +110,47 @@ button{
     min-width: 50px;
     margin-right: 20px;
     padding: 0 15px;
+    text-decoration: none;
 }
 
 button:hover{
     box-shadow: 0 0 10px rgba(85, 85, 85, 0.295); 
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    font-size: 15px;
+}
+
+.upper-footer{
+    line-height: 40px;
+    background-color: rgb(204, 204, 204);
+    color: gray;
+    border-top: 1px solid rgb(187, 187, 187);
+    padding-left: 30px;
+}
+
+.lower-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 40px;
+    background-color: rgb(204, 204, 204);
+    color: gray;
+    border-top: 1px solid rgb(187, 187, 187);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.lower-footer a{
+    margin-right: 20px;
+}
+
+.lower-footer a:hover{
+    text-decoration: underline;
 }
