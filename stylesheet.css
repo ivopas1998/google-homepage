@@ -16,6 +16,8 @@ body{
     height: 40px;
     max-width: 600px;
     margin-bottom: 20px;
+    position: relative;
+    resize: vertical;
 }
 
 .searchbar :hover{
@@ -28,6 +30,7 @@ body{
     padding-left: 20px;
     border: 1px solid rgb(172, 168, 168);
     border-radius: 25px;
+    outline: none;
 }
 
 nav{
@@ -118,12 +121,11 @@ button:hover{
 }
 
 footer{
-    display: flex;
+    position: fixed;
     flex-direction: column;
     bottom: 0;
     left: 0;
     right: 0;
-    position: absolute;
     font-size: 12px;
 }
 
